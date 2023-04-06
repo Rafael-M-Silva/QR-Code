@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Code</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">qrcode</a></li>
+                <li><a href="#">vantagens</a></li>
+                <li><a href="#">como usar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- qr code start -->
+        <section class="qr_code">
+            <p>O uso de QR code pode facilitar muito a sua vida! Com ele, você pode acessar rapidamente informações importantes, como URLs de sites, dados de pagamento e códigos de acesso a eventos, com apenas um toque na tela do seu dispositivo móvel. <span>Experimente agora</span> e veja como o QR code pode ser útil em seu dia a dia!</p>
+
+            <div class="content_qrcode">
+                <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=250x250" alt="" />
+            </div>
+            
+            <div class="info">
+                <form>
+                    <label for="linkqr">Insira o seu <span>link</span> logo abaixo.</label>
+                    <input type="text" name="link" id="link" placeholder="QR CODE">
+                    <input id="btn" type="button" value="Gerar">
+                </form>
+            </div>
+
+        </section>
+        <!-- qr code end  -->
+
+        <!-- benefits start -->
+        <section class="benefits">
+
+            <h1>vantagens</h1>
+        </section>
+        <!-- benefits end -->
+
+    </main>
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

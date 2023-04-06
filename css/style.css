@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    background: #fdfdfd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 9%;
+    align-items: center;
+    background: #111;
+}
+
+header h1 {
+    color: #fff;
+}
+
+header .navbar ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+header .navbar ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .navbar ul li {
+    position: relative;
+    padding: 3px;
+}
+
+header .navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #fff;
+    left: 0%;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out;
+}
+
+header .navbar ul li:hover::after{
+    width: 100%;
+}
+
+main {
+    padding: 20px 9%;
+}
+
+.qr_code h1 {
+    color: #111;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+span {
+    background: #111;
+    color: #fff;
+}
+
+
+.qr_code .content_qrcode {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.qr_code .info {
+    display: flex;
+    justify-content: center;
+}
+
+.qr_code .info form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qr_code .info form #btn {
+    border: none;
+    background: #fff;
+    padding: 5px;
+    color: #111;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #111;
+}
+
+.qr_code .info form #btn:hover {
+    background: #111;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
