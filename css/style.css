@@ -64,6 +64,10 @@ main {
     margin-bottom: 10px;
 }
 
+#qr-code {
+    width: 200px;
+}
+
 span {
     background: #111;
     color: #fff;
@@ -85,6 +89,46 @@ span {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.qr_code .info #link {
+    transform: none;
+    border: 2px solid #3b3b3b;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.campo_vazio {
+    animation: vazio .7s ease-in-out;
+}
+
+@keyframes vazio {
+    0% {
+        transform: rotate(1deg);
+        border: 2px solid #ff0000;
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    30%{
+        transform: rotate(1deg);
+    }
+    45%{
+        transform: rotate(-1deg);
+    }
+    60%{
+        transform: rotate(1deg);
+    }
+    75%{
+        transform: rotate(-1deg);
+    }
+    90% {
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0);
+        border: 2px solid #ff0000;
+    }
 }
 
 .qr_code .info form #btn {
