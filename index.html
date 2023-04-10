@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,20 +16,24 @@
         <h1>Code</h1>
         <nav class="navbar">
             <ul>
-                <li><a href="#">qrcode</a></li>
-                <li><a href="#">vantagens</a></li>
-                <li><a href="#">como usar</a></li>
+                <li><a href="#code">qrcode</a></li>
+                <li><a href="#use">como usar</a></li>
+                <li><a href="#benefits">vantagens</a></li>
             </ul>
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
     <main>
 
         <!-- qr code start -->
         <section class="qr_code">
+            <h1 id="code">Code</h1>
             <p>O uso de QR code pode facilitar muito a sua vida! Com ele, você pode acessar rapidamente informações importantes, como URLs de sites, dados de pagamento e códigos de acesso a eventos, com apenas um toque na tela do seu dispositivo móvel. <span>Experimente agora</span> e veja como o QR code pode ser útil em seu dia a dia!</p>
 
             <div class="content_qrcode">
-                <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=250x250" alt="" />
+                <img id="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=250x250" alt="qr-code"/>
             </div>
             
             <div class="info">
@@ -37,17 +42,66 @@
                     <input type="text" name="link" id="link" placeholder="QR CODE">
                     <input id="btn" type="button" value="Gerar">
                 </form>
+                <div class="download">
+                    <button class="btn-download">
+                        <a id="qr" href="" download="qr-Code.png" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                        </a>
+                    </button>
+                </div>
             </div>
 
         </section>
         <!-- qr code end  -->
 
+        <!-- section how to use start -->
+        <section  class="use">
+            <h1 id="use">Como usar e fazer <span>download</span> do seu QR Code</h1>
+            <ol>
+                <li>Selecione o tipo de conteúdo: Decida qual tipo de informação você deseja incorporar no código QR. Isso pode ser uma URL de um site, informações de contato, endereço de e-mail, mensagem de texto, número de telefone, entre outros.</li>
+                <li>Insira os dados: Use a ferramenta de geração de código QR para inserir os dados que deseja incorporar no código.</li>
+                <li>Gere o código QR: Clique no botão de geração de código QR para criar o código. O código QR será gerado em segundos e você poderá visualizá-lo na tela.</li>
+                <li>Após o código gerado, aparecerá um botão de download. Ao clicar nele, você será redirecionado para outra página. Então, clique com o botão direito do mouse sobre o QRCode e selecione a opção "Salvar como..." para salvá-lo em seu dispositivo.</li>
+                <li>Teste o código QR: É importante testar o código QR antes de usá-lo publicamente para garantir que ele funcione corretamente. Use um aplicativo de leitura de código QR em seu smartphone ou tablet para escanear o código e verificar se ele leva você ao conteúdo desejado.</li>
+                <li>Imprima ou incorpore o código QR: Depois de testar o código QR e verificar se ele funciona corretamente, você pode imprimir o código em materiais de marketing, embalagens de produtos, cartões de visita, convites ou em qualquer outro lugar onde deseje disponibilizar o código QR. Certifique-se de imprimir o código com qualidade e em um tamanho que permita a fácil leitura por dispositivos móveis.</li>
+                <li>Compartilhe e acompanhe: Compartilhe o código QR com seu público-alvo e acompanhe sua eficácia.</li>
+            </ol>
+        </section>
+        <!-- section how to use end -->
+
         <!-- benefits start -->
         <section class="benefits">
 
-            <h1>vantagens</h1>
+            <h1 id="benefits">Vantagens do uso de QR Code</h1>
+            <ul>
+                <li>Facilidade de uso: Os códigos QR são fáceis de criar, imprimir e digitalizar, tornando-os uma opção conveniente para fornecer informações adicionais ou acesso a conteúdo online.</li>
+                <li>Capacidade de armazenamento de dados: Os códigos QR podem armazenar uma grande quantidade de informações, como URLs de sites, informações de contato, endereços de e-mail, mensagens de texto, números de telefone e até mesmo arquivos em formato PDF ou imagens.</li>
+                <li>Acessibilidade: Os códigos QR podem ser lidos por dispositivos móveis com câmera e acesso à internet, tornando-os acessíveis a um grande número de pessoas com smartphones ou tablets.</li>
+                <li>Versatilidade: Os códigos QR podem ser usados em uma ampla variedade de aplicações, como publicidade, embalagens de produtos, cartões de visita, convites, cupons, bilhetes de eventos e muito mais.</li>
+                <li>Rastreabilidade: Os códigos QR podem ser usados para rastrear a eficácia de campanhas de marketing, permitindo que as empresas acompanhem quantas vezes o código QR foi digitalizado e quais informações foram acessadas.</li>
+                <li>Interação com o cliente: Os códigos QR podem ser usados para envolver os clientes de forma interativa, fornecendo informações adicionais, oferecendo descontos exclusivos, solicitando feedback ou incentivando a participação em concursos e promoções.</li>
+                <li>Economia de espaço: Os códigos QR ocupam pouco espaço físico e podem ser facilmente adicionados a materiais de marketing ou embalagens de produtos sem ocupar muito espaço adicional.</li>
+                <li>Atualização de conteúdo: Ao usar códigos QR em materiais impressos, é possível atualizar o conteúdo online associado a eles sem precisar reimprimir o material físico, o que pode economizar tempo e recursos.</li>
+                <li>Segurança: Alguns códigos QR podem ser protegidos com senhas ou criptografia para garantir a segurança das informações associadas a eles, tornando-os uma opção segura para compartilhar informações sensíveis.</li>
+                <li>Inovação: O uso de códigos QR pode adicionar um elemento inovador e moderno às estratégias de marketing, permitindo que as empresas se destaquem e se conectem com o público de forma criativa.</li>
+            </ul>
         </section>
         <!-- benefits end -->
+
+
+        <!-- footer start -->
+        <footer>
+            <p>Desenvolvido por, <strong>Rafael Mauricio &copy;</strong></p>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/Rafael-M-Silva" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rafael-mauricio-dev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://wa.me/5519981848627" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a href="mailto:rafael_mauricio@hotmail.com" target="_blank"><i class="fa-sharp fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- footer end -->
 
     </main>
     
