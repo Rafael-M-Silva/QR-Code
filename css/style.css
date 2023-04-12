@@ -20,8 +20,9 @@ header {
     background: #111;
 }
 
-header h1 {
+header h1 a{
     color: #fff;
+    cursor: pointer;
 }
 
 header .navbar ul {
@@ -29,7 +30,6 @@ header .navbar ul {
     gap: 30px;
     
 }
-
 
 header .navbar ul li a {
     color: #fff;
@@ -86,6 +86,11 @@ section h1 {
 span {
     background: #111;
     color: #fff;
+}
+
+#logo {
+    background: #fff;
+    color: #111;
 }
 
 
@@ -200,6 +205,7 @@ span {
 
 .use ol li{
     list-style: decimal;
+    margin-left: 30px;
     margin-bottom: 30px;
 }
 
@@ -234,9 +240,17 @@ footer nav ul {
     display: flex;
 }
 
+@media(max-width:670px) {
+    footer p {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media(max-width: 570px) {
     .menu-btn {
         display: block;
+        z-index: 1000;
     }
 
     header .navbar ul {
@@ -258,6 +272,14 @@ footer nav ul {
         top: 0;
         font-size: 2rem;
         z-index: 1000;
+    }
+}
+
+@media(max-width:460px) {
+    footer p {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
