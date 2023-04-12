@@ -15,7 +15,7 @@ html, body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 9%;
+    padding: 20px 18%;
     align-items: center;
     background: #111;
 }
@@ -70,7 +70,7 @@ header .navbar ul li:hover::after{
 
 
 section {
-    padding: 20px 9%;
+    padding: 20px 18%;
 }
 
 section h1 {
@@ -219,7 +219,7 @@ footer {
     background: #111;
     color: #fdfdfd;
     display: flex;
-    padding: 40px 9%;
+    padding: 40px 18%;
     justify-content: space-between;
     align-items: center;
 }
@@ -238,6 +238,23 @@ footer nav ul li i:hover {
 
 footer nav ul {
     display: flex;
+}
+
+@media(max-width:800px) {
+    header{
+        padding: 20px 9%;
+        transition: 0.3s;
+    }
+
+    section {
+        padding: 20px 9%;
+        transition: 0.3s;
+    }
+
+    footer {
+        padding: 40px 9%;
+        transition: 0.3s;
+    }
 }
 
 @media(max-width:670px) {
