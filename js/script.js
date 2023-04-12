@@ -1,6 +1,7 @@
 const btn = document.querySelector("#btn")
 const menu = document.querySelector(".fa-solid")
 const navbar = document.querySelector(".navbar ul")
+    
 
 /* Menu navbar (mobile) */
 menu.addEventListener("click", ()=> {
@@ -21,6 +22,8 @@ function qrCode() {
     let link = document.querySelector("#link")
     let linkValue = link.value
     let url = `http://api.qrserver.com/v1/create-qr-code/?data=${linkValue}&size=250x250`
+
+    
 
     if(linkValue.length == 0) {
         url = `https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=250x250`
@@ -54,3 +57,12 @@ btn.addEventListener("click", ()=> {
 link.addEventListener('animationend', () => {
     link.classList.remove('campo_vazio');
 });
+
+
+/* usamos a função keydown, para quando precionarmos uma tecla, event.key são todas as teclas, entao se for === Enter faça o seguindo bloco */
+document.addEventListener('keydown', function(event) {
+    if(event.key === 'Enter') {
+        event.preventDefault()
+        qrCode()
+    }
+  });
